@@ -31,7 +31,7 @@ export default function Home() {
   const buscaClima = async () => {
     try {
       const response = await axios.get(url);
-      setResultado(response.data); // Armazena o resultado da chamada à API no estado
+      setResultado(response.data); // Armazena o resultad
 
       console.log(resultado);
     } catch (error) {
@@ -60,7 +60,7 @@ export default function Home() {
   }, [temperatura]);
 
   return (
-    <div className="flex flex-col  justify-center items-center h-screen text-white text-2xl w-full bg-purple-700 ">
+    <div className="flex flex-col  justify-center items-center h-screen text-white text-2xl w-full bg-blue-700 ">
       <div className="border-2 border-white rounded-lg p-6">
         <div>
           <h2 className="text-4xl pb-2">Confira o clima de uma cidade:</h2>
